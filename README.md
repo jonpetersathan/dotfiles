@@ -32,7 +32,7 @@ Existing files at these destinations are removed before the symlinks are created
 Pull the latest changes and rerun the installer:
 
 ```sh
-cd ~/.dotfiles && git pull && ./install.sh
+git clone https://github.com/jonpetersathan/dotfiles ~/.dotfiles && cd ~/.dotfiles && ./install.sh
 ```
 
 Starship, Zsh, and any commands used by the aliases are optional dependencies and are not installed by this repository.
