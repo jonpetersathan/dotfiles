@@ -1,0 +1,7 @@
+[init]
+    defaultBranch = main
+[user]
+    name = Jonathan Peters
+    email = jonpetersathan@gmail.com
+[core]
+    editor = nano

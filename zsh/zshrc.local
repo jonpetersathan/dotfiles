@@ -1,0 +1,40 @@
+# zsh/zshrc.local
+
+# Initialize Starship prompt (if installed in the container)
+if command -v starship >/dev/null 2>&1; then
+    prompt default
+    eval "$(starship init zsh)"
+fi
+
+# Function to update all packages
+update() {
+  sudo apt update && \
+  sudo apt upgrade -y && \
+  sudo apt autoremove -y && \
+  sudo apt autoclean
+  if command -v snap >/dev/null 2>&1; then
+    sudo snap refresh
+  fi
+}
+
+# Function to generate a password (default length: 24 if not specified)
+genpass() {
+  local length="${1:-24}"
+  local password
+  password="$(LC_ALL=C tr -dc 'A-Za-z0-9' </dev/urandom | head -c "$length")"
+
+  echo "Plain Text:     $password"
+  echo -n "Base64 Encoded: "
+  echo -n "$password" | base64
+}
+
+# Source custom aliases
+DOTFILES_DIR="${HOME}/.dotfiles"
+if [ -f "${DOTFILES_DIR}/zsh/aliases.zsh" ]; then
+    source "${DOTFILES_DIR}/zsh/aliases.zsh"
+fi
+
+# 3. Environment variables
+export EDITOR="nano"
+export KUBE_EDITOR="nano"
+export DOCKER_COMPOSE_PROVIDER=podman-compose

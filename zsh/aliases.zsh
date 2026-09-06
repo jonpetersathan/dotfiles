@@ -1,0 +1,9 @@
+alias k=kubectl
+alias kap="kubectl apply -f"
+alias kall="kubectl get all"
+alias kns=kubens
+alias kctx=kubectx
+alias helm="microk8s.helm"
+alias record="asciinema rec"
+alias rec=record
+alias play="asciinema play"
