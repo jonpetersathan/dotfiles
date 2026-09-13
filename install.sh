@@ -29,7 +29,11 @@ link_file "${DOTFILES_DIR}/starship/starship.toml" "${HOME}/.config/starship.tom
 link_file "${DOTFILES_DIR}/zsh/zshrc" "${HOME}/.zshrc"
 link_file "${DOTFILES_DIR}/zsh/zshrc.local" "${HOME}/.zshrc.local"
 
-# 5. Tmux (if present)
+# 5. VS Code Configuration
+link_file "${DOTFILES_DIR}/vscode/settings.json" "${HOME}/.config/Code/User/settings.json"
+link_file "${DOTFILES_DIR}/vscode/settings.json" "${HOME}/.vscode-server/data/Machine/settings.json"
+
+# 6. Tmux (if present)
 if [ -f "${DOTFILES_DIR}/tmux/.tmux.conf" ]; then
     link_file "${DOTFILES_DIR}/tmux/.tmux.conf" "${HOME}/.tmux.conf"
 fi

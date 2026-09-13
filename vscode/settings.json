@@ -1,0 +1,20 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "'Adwaita Mono Ligatures','Symbols Nerd Font Mono','Droid Sans Mono', monospace",
+    "terminal.integrated.fontSize": 15,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "editor.wordWrap": "on",
+    "editor.fontLigatures": true,
+    "telemetry.feedback.enabled": false,
+    "telemetry.telemetryLevel": "off",
+    "git.enableSmartCommit": true,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "remote.SSH.useLocalServer": false,
+    "update.mode": "none",
+    "extensions.ignoreRecommendations": true,
+    "chat.viewSessions.orientation": "stacked",
+    "terminal.integrated.initialHint": false,
+    "workbench.colorTheme": "Dark 2026",
+    "workbench.iconTheme": "Seti"
+}   
