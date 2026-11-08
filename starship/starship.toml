@@ -78,6 +78,7 @@ symbol = " "
 symbol = " "
 
 [os.symbols]
+AlmaLinux = " "
 Alpaquita = " "
 Alpine = " "
 Amazon = " "
@@ -120,9 +121,6 @@ Windows = " "
 
 [package]
 symbol = "󰏗 "
-
-[pijul_channel]
-symbol = "🪺 "
 
 [python]
 symbol = " "
